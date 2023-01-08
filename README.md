@@ -1,557 +1,548 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9694213&assignment_repo_type=AssignmentRepo)
 
 #displaying the item info
-print( '\033[1m'+ 'WELCOME TO THE')
-print('\033[1m'+'COMBO-VENDING EXPRESS!!'+'\033[0m')
-print('\033[1m' +'\033[92m'+ 'HERE IS THE MENU' + '\033[0m' )
+while True:
+  print( '\033[1m'+ 'WELCOME TO THE')
+  print('\033[1m'+'COMBO-VENDING EXPRESS!!'+'\033[0m')
+  print('\033[1m' +'\033[92m'+ 'HERE IS THE MENU' + '\033[0m' )
 
-Candy= 1001
-print('\033[92m'+ "1001 - Candy")
-Drinks= 2001
-print("2001 - Drinks")
-Chips= 3001
-print("3001 - Chips")
-Ice_creams= 4001
-print("4001 - Ice_creams")
-Other= 5001
-print("5001 - Other"+'\033[0m')
-choice=int(input("Please select your product: "))
+  Candy= 1001
+  print('\033[92m'+ "1001 - Candy")
+  Drinks= 2001
+  print("2001 - Drinks")
+  Ice_creams= 3001
+  print("3001 - Ice_creams")
+  choice=int(input("Please select your product: "))
 
+  if choice== Candy:
+    print ('\033[94m'+" ~ You have selected Candy ~ "+'\033[0m')
+    print(" {{ Here are the list of candies available }}")
+    Skittles= 101
+    print('\033[92m'+"101 - Skittels            - 1AED")
+    Gumballs= 201
+    print("201 - Gumballs            - 2AED")
+    Dairymilk=301
+    print("301 - Dairymilk           - 2AED")
+    Snickers= 401
+    print("401 - Snickers            - 3AED")
+    Galaxy=  501
+    print("501 - Galaxy              - 3AED")
+    Kitkats= 601
+    print("601 - Kitkats             - 3AED"+'\033[0m')
+    choice=int(input("  Type a product code to continue... "))
 
-if choice== Candy:
-  print ('\033[94m'+" ~ You have selected Candy ~ "+'\033[0m')
-  print(" {{ Here are the list of candies available }}")
-  Skittles= 101
-  print('\033[92m'+"101 - Skittels            - 1AED")
-  Gumballs= 201
-  print("201 - Gumballs            - 2AED")
-  Dairymilk=301
-  print("301 - Dairymilk           - 2AED")
-  Snickers= 401
-  print("401 - Snickers            - 3AED")
-  Galaxy=  501
-  print("501 - Galaxy              - 3AED")
-  Kitkats= 601
-  print("601 - Kitkats             - 3AED"+'\033[0m')
-  choice=int(input("  Type a product code to continue... "))
-
-if choice== Skittles:
-  print('\033[94m'+" ~ Great! You have chosen Skittles ~ ")
-  print("Please Pay 1 AED"+'\033[0m')
-  y=float(input("Please insert the money.."))
-  Skittles = 1
-  if y > Skittles:
-      print("Here is your change: ",y - Skittles)
-      print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-  elif y< Skittles:
-       print('\033[91m'+"please enter enough money"+'\033[0m')
-       print('\033[91m'+"Your money is refunded "+'\033[0m')
-      
-  elif y==Skittles:
-      print('\033[94m'+"Here is your item...")
-      print("Thankyou for the purchase, have a good day!"+'\033[0m')
- 
-if choice== Gumballs:
+    if choice== Skittles:
+      print('\033[94m'+" ~ Great! You have chosen Skittles ~ ")
+      print("Please Pay 1 AED"+'\033[0m')
+    elif choice== Gumballs:
       print('\033[94m'+" ~ Great! You have chosen Gumballs ~ ")
       print("Please Pay 2 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Gumballs = 2
-      if y > Gumballs:
-          print("Here is your change :  ",y - Gumballs)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Gumballs:
-           print('\033[91m'+"please enter enough money"+'\033[0m')
-           print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Gumballs:
-          print('\033[94m'+"Here is your item...")
-          print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Dairymilk:
+    elif choice== Dairymilk:
       print('\033[94m'+" ~ Great! You have chosen Dairymilk ~ ")
       print("Please Pay 2 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Dairymilk = 2
-      if y > Dairymilk:
-          print("Here is your change :  ",y - Dairymilk)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Dairymilk:
-        print('\033[91m'+"please enter enough money"+'\033[0m')
-        print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Dairymilk:
-       print('\033[94m'+"Here is your item...")
-       print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Snickers:
+    elif choice== Snickers:
       print('\033[94m'+" ~ Great! You have chosen Snickers ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Snickers = 3
-      if y > Snickers:
-          print("Here is your change : ",y - Snickers)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Snickers:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y== Snickers:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Galaxy:
+    elif choice== Galaxy:
       print('\033[94m'+" ~ Great! You have chosen Galaxy ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Galaxy = 3
-      if y > Galaxy:
-          print("Here is your change :  ",y - Galaxy)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Galaxy:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Galaxy:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Kitkats:
+    elif choice== Kitkats:
       print('\033[94m'+" ~ Great! You have chosen Kitkats ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Kitkats = 3
-      if y > Kitkats:
-          print("Here is your change : ",y - Kitkats)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Kitkats:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Kitkats:
+
+  if choice==Skittles:
+    money_candy=float(input("Please insert the money"))
+    Candy_price=1
+    Candy_change=money_candy-Candy_price
+    while True:
+      if money_candy==Candy_price:
         print('\033[94m'+"Here is your item...")
         print("Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      elif money_candy>Candy_price:
+        print("Here is your change : ")
+        print(Candy_change)
+        print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      else:
+        print('\033[91m'+"please enter enough money"+'\033[0m')
+        moneyagain_candy=float(input("please insert money again"))
+        if moneyagain_candy + money_candy==Candy_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        break
 
+  if choice==Gumballs:
+      money_Gumballs=float(input("Please insert the money"))
+      Gumballs_price=2
+      Gumballs_change=money_Gumballs-Gumballs_price
+      while True:
+        if money_Gumballs==Gumballs_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Gumballs>Gumballs_price:
+          print("Here is your change : ")
+          print(Gumballs_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Gumballs=float(input("please insert money again"))
+          if moneyagain_Gumballs + money_Gumballs==Gumballs_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
+    
+  if choice==Dairymilk:
+      money_Dairymilk=float(input("Please insert the money"))
+      Dairymilk_price=2
+      Dairymilk_change=money_Dairymilk-Dairymilk_price
+      while True:
+        if money_Dairymilk==Dairymilk_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Dairymilk>Dairymilk_price:
+          print("Here is your change : ")
+          print(Dairymilk_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Dairymilk=float(input("please insert money again"))
+          if moneyagain_Dairymilk + money_Dairymilk==Dairymilk_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-if choice== Drinks:
-  print ('\033[94m'+" ~ You have selected Drinks ~ "+'\033[0m')
-  print(" {{ Here are the list of Drinks available }}")
-  Water=701
-  print('\033[92m'+"701 - Water            - 1AED")
-  MountainDew= 801
-  print("801 - MountainDew      - 3AED")
-  Pepsi=901
-  print("901 - Pepsi            - 3AED")
-  ColdCoffee= 111
-  print("111 - ColdCoffee       - 3AED")
-  Sprite=  112
-  print("112 - Sprite           - 3AED")
-  Coke= 113
-  print("113 - Coke             - 3AED"+'\033[0m')
-  choice=int(input("  Type a product code to continue... "))
+  if choice==Snickers:
+    money_Snickers=float(input("Please insert the money"))
+    Snickers_price=3
+    Snickers_change=money_Snickers-Snickers_price
+    while True:
+      if money_Snickers==Snickers_price:
+        print('\033[94m'+"Here is your item...")
+        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      elif money_Snickers>Snickers_price:
+        print("Here is your change : ")
+        print(Snickers_change)
+        print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      else:
+        print('\033[91m'+"please enter enough money"+'\033[0m')
+        moneyagain_Snickers=float(input("please insert money again"))
+        if moneyagain_Snickers + money_Snickers==Snickers_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        break
 
+  if choice==Galaxy:
+    money_Galaxy=float(input("Please insert the money"))
+    Galaxy_price=3
+    Galaxy_change=money_Galaxy-Galaxy_price
+    while True:
+      if money_Galaxy==Galaxy_price:
+        print('\033[94m'+"Here is your item...")
+        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      elif money_Galaxy>Galaxy_price:
+        print("Here is your change : ")
+        print(Galaxy_change)
+        print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      else:
+        print('\033[91m'+"please enter enough money"+'\033[0m')
+        moneyagain_Galaxy=float(input("please insert money again"))
+        if moneyagain_Galaxy + money_Galaxy==Galaxy_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        break
 
-if choice==Water:
-  print('\033[94m'+" ~ Great! You have chosen Water ~ ")
-  print("Please Pay 1 AED"+'\033[0m')
-  y=float(input("Insert the money.."))
-  Water = 1
-  if y > Water:
-      print("Here is your change: ",y - Water)
-      print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-  elif y< Water:
-       print('\033[91m'+"please enter enough money"+'\033[0m')
-       print('\033[91m'+"Your money is refunded "+'\033[0m')
-      
-  elif y==Water:
-      print('\033[94m'+"Here is your item...")
-      print("Thankyou for the purchase, have a good day!"+'\033[0m')
- 
-if choice== MountainDew:
+  if choice==Kitkats:
+    money_Kitkats=float(input("Please insert the money"))
+    Kitkats_price=3
+    Kitkats_change=money_Kitkats-Kitkats_price
+    while True:
+      if money_Kitkats==Kitkats_price:
+        print('\033[94m'+"Here is your item...")
+        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      elif money_Kitkats>Kitkats_price:
+        print("Here is your change : ")
+        print(Kitkats_change)
+        print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      else:
+        print('\033[91m'+"please enter enough money"+'\033[0m')
+        moneyagain_Kitkats=float(input("please insert money again"))
+        if moneyagain_Kitkats + money_Kitkats==Kitkats_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        break
+
+  if choice== Drinks:
+    print ('\033[94m'+" ~ You have selected Drinks ~ "+'\033[0m')
+    print(" {{ Here are the list of Drinks available }}")
+    Water=701
+    print('\033[92m'+"701 - Water            - 1AED")
+    MountainDew= 801
+    print("801 - MountainDew      - 3AED")
+    Pepsi=901
+    print("901 - Pepsi            - 3AED")
+    ColdCoffee= 111
+    print("111 - ColdCoffee       - 3AED")
+    Sprite=  112
+    print("112 - Sprite           - 3AED")
+    Coke= 113
+    print("113 - Coke             - 3AED"+'\033[0m')
+    choice=int(input("  Type a product code to continue... "))
+
+    if choice== Water:
+      print('\033[94m'+" ~ Great! You have chosen Water ~ ")
+      print("Please Pay 1 AED"+'\033[0m')
+    elif choice== MountainDew:
       print('\033[94m'+" ~ Great! You have chosen MountainDew ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      MountainDew = 3
-      if y > MountainDew:
-          print("Here is your change :  ",y - MountainDew)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< MountainDew:
-           print('\033[91m'+"please enter enough money"+'\033[0m')
-           print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==MountainDew:
-          print('\033[94m'+"Here is your item...")
-          print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Pepsi:
+    elif choice== Pepsi:
       print('\033[94m'+" ~ Great! You have chosen Pepsi ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Pepsi = 3
-      if y > Pepsi:
-          print("Here is your change :  ",y - Pepsi)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Pepsi:
-        print('\033[91m'+"please enter enough money"+'\033[0m')
-        print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Pepsi:
-       print('\033[94m'+"Here is your item...")
-       print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== ColdCoffee:
+    elif choice== ColdCoffee:
       print('\033[94m'+" ~ Great! You have chosen ColdCoffee ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      ColdCoffee = 3
-      if y > ColdCoffee:
-          print("Here is your change : ",y - ColdCoffee)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< ColdCoffee:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==ColdCoffee:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Sprite:
+    elif choice== Sprite:
       print('\033[94m'+" ~ Great! You have chosen Sprite ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Sprite = 3
-      if y > Sprite:
-          print("Here is your change :  ",y - Sprite)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Sprite:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Sprite:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Coke:
+    elif choice== Coke:
       print('\033[94m'+" ~ Great! You have chosen Coke ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Coke = 3
-      if y > Coke:
-          print("Here is your change : ",y - Coke)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Coke:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Coke:
+    
+  if choice==Water:
+    money_Water=float(input("Please insert the money"))
+    Water_price=1
+    Water_change=money_Water-Water_price
+    while True:
+      if money_Water==Water_price:
         print('\033[94m'+"Here is your item...")
         print("Thankyou for the purchase, have a good day!"+'\033[0m')
- 
-
-#CHIPS
-if choice== Chips:
-  print ('\033[94m'+" ~ You have selected Chips ~ "+'\033[0m')
-  print(" {{ Here are the list of Chips available }}")
-  Doritos=114
-  print('\033[92m'+"114 - Doritos             - 3AED")
-  Cheetos= 115
-  print("115 - Cheetos             - 2AED")
-  Pringles=116
-  print("116 - Pringles            - 2AED")
-  Lays= 117
-  print("117 - Lays                - 1AED")
-  Buggles=  118
-  print("118 - Buggles             - 1AED")
-  Pofak= 119
-  print("119 - Pofak               - 1AED"+'\033[0m')
-  choice=int(input("  Type a product code to continue... "))
-
-if choice== Doritos:
-      print('\033[94m'+" ~ Great! You have chosen Doritos ~ ")
-      print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Doritos = 3
-      if y > Doritos:
-          print("Here is your change :  ",y - Doritos)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y < Doritos:
-           print('\033[91m'+"please enter enough money"+'\033[0m')
-           print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y== Doritos:
-          print('\033[94m'+"Here is your item...")
-          print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Cheetos:
-      print('\033[94m'+" ~ Great! You have chosen Cheetos ~ ")
-      print("Please Pay 2 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Cheetos = 2
-      if y > Cheetos:
-          print("Here is your change :  ",y - Cheetos)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Cheetos:
-           print('\033[91m'+"please enter enough money"+'\033[0m')
-           print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Cheetos:
-          print('\033[94m'+"Here is your item...")
-          print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Pringles:
-      print('\033[94m'+" ~ Great! You have chosen Pringles ~ ")
-      print("Please Pay 2 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Pringles = 2
-      if y > Pringles:
-          print("Here is your change :  ",y - Pringles)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Pringles:
+        break
+      elif money_Water>Water_price:
+        print("Here is your change : ")
+        print(Water_change)
+        print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+        break
+      else:
         print('\033[91m'+"please enter enough money"+'\033[0m')
-        print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Pringles:
-       print('\033[94m'+"Here is your item...")
-       print("Thankyou for the purchase, have a good day!"+'\033[0m')
+        moneyagain_Water=float(input("please insert money again"))
+        if moneyagain_Water + money_Water==Water_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        break
 
-if choice== Lays:
-      print('\033[94m'+" ~ Great! You have chosen Lays ~ ")
-      print("Please Pay 1 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Lays = 1
-      if y > Lays:
-          print("Here is your change : ",y - Lays)
+  if choice==MountainDew:
+      money_MountainDew=float(input("Please insert the money"))
+      MountainDew_price=3
+      MountainDew_change=money_MountainDew-MountainDew_price
+      while True:
+        if money_MountainDew==MountainDew_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_MountainDew>MountainDew_price:
+          print("Here is your change : ")
+          print(MountainDew_change)
           print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Lays:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Lays:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_MountainDew=float(input("please insert money again"))
+          if moneyagain_MountainDew + money_MountainDew==MountainDew_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-if choice== Buggles:
-      print('\033[94m'+" ~ Great! You have chosen Buggles ~ ")
-      print("Please Pay 1 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Buggles = 1
-      if y > Buggles:
-          print("Here is your change :  ",y - Buggles)
+  if choice==Pepsi:
+      money_Pepsi=float(input("Please insert the money"))
+      Pepsi_price=3
+      Pepsi_change=money_Pepsi-Pepsi_price
+      while True:
+        if money_Pepsi==Pepsi_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Pepsi>Pepsi_price:
+          print("Here is your change : ")
+          print(Pepsi_change)
           print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Buggles:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Buggles:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Pepsi=float(input("please insert money again"))
+          if moneyagain_Pepsi + money_Pepsi==Pepsi_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-if choice== Pofak:
-      print('\033[94m'+" ~ Great! You have chosen Pofak ~ ")
-      print("Please Pay 1 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Pofak = 1
-      if y > Pofak:
-          print("Here is your change : ",y - Pofak)
+  if choice==ColdCoffee:
+      money_ColdCoffee=float(input("Please insert the money"))
+      ColdCoffee_price=3
+      ColdCoffee_change=money_ColdCoffee-ColdCoffee_price
+      while True:
+        if money_ColdCoffee==ColdCoffee_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_ColdCoffee>ColdCoffee_price:
+          print("Here is your change : ")
+          print(ColdCoffee_change)
           print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Pofak:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Pofak:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')  
- 
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_ColdCoffee=float(input("please insert money again"))
+          if moneyagain_ColdCoffee + money_ColdCoffee==ColdCoffee_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-#ICECREAMS
+  if choice==Sprite:
+      money_Sprite=float(input("Please insert the money"))
+      Sprite_price=3
+      Sprite_change=money_Sprite-Sprite_price
+      while True:
+        if money_Sprite==Sprite_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Sprite>Sprite_price:
+          print("Here is your change : ")
+          print(Sprite_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Sprite=float(input("please insert money again"))
+          if moneyagain_Sprite + money_Sprite==Sprite_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-if choice== Ice_creams:
-  print ('\033[94m'+" ~ You have selected Ice_creams ~ "+'\033[0m')
-  print(" {{ Here are the list of Icecream Flavours available }}")
-  
-  Vanilla= 120
-  print('\033[92m'+"120 - Vanilla               - 2AED")
-  Chocolate= 121
-  print("121 - Chocolate             - 2AED")
-  Strawberry=122
-  print("122 - Strawberry            - 3AED")
-  Coffee= 123
-  print("123 - Coffee                - 3AED")
-  Mango=  124
-  print("124 - Mango                 - 3AED")
-  Avocado= 125
-  print("125 - Avocado               - 3AED"+'\033[0m')
-  choice=int(input("  Type a product code to continue... "))
+  if choice==Coke:
+      money_Coke=float(input("Please insert the money"))
+      Coke_price=3
+      Coke_change=money_Coke-Coke_price
+      while True:
+        if money_Coke==Coke_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Coke>Coke_price:
+          print("Here is your change : ")
+          print(Coke_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Coke=float(input("please insert money again"))
+          if moneyagain_Coke + money_Coke==Coke_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
+  if choice== Ice_creams:
+    print ('\033[94m'+" ~ You have selected Ice_creams ~ "+'\033[0m')
+    print(" {{ Here are the list of Icecream Flavours available }}")
+    Vanilla= 120
+    print('\033[92m'+"120 - Vanilla               - 2AED")
+    Chocolate= 121
+    print("121 - Chocolate             - 2AED")
+    Strawberry=122
+    print("122 - Strawberry            - 3AED")
+    Coffee= 123
+    print("123 - Coffee                - 3AED")
+    Mango=  124
+    print("124 - Mango                 - 3AED")
+    Avocado= 125
+    print("125 - Avocado               - 3AED"+'\033[0m')
+    choice=int(input("  Type a product code to continue... "))
 
-if choice== Vanilla:
-  print('\033[94m'+" ~ Great! You have chosen Vanilla ~ ")
-  print("Please Pay 2 AED"+'\033[0m')
-  y=float(input("Insert the money.."))
-  Vanilla = 2
-  if y > Vanilla:
-      print("Here is your change: ",y - Vanilla)
-      print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-  elif y< Vanilla:
-       print('\033[91m'+"please enter enough money"+'\033[0m')
-       print('\033[91m'+"Your money is refunded "+'\033[0m')
-      
-  elif y==Vanilla:
-      print('\033[94m'+"Here is your item...")
-      print("Thankyou for the purchase, have a good day!"+'\033[0m')
- 
-if choice== Chocolate:
+    if choice== Vanilla:
+      print('\033[94m'+" ~ Great! You have chosen Vanilla ~ ")
+      print("Please Pay 2 AED"+'\033[0m')
+    elif choice== Chocolate:
       print('\033[94m'+" ~ Great! You have chosen Chocolate ~ ")
       print("Please Pay 2 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Chocolate = 2
-      if y > Chocolate:
-          print("Here is your change :  ",y - Chocolate)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Chocolate:
-           print('\033[91m'+"please enter enough money"+'\033[0m')
-           print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Chocolate:
-          print('\033[94m'+"Here is your item...")
-          print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Strawberry:
+    elif choice== Strawberry:
       print('\033[94m'+" ~ Great! You have chosen Strawberry ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Strawberry = 3
-      if y > Strawberry:
-          print("Here is your change :  ",y - Strawberry)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Strawberry:
-        print('\033[91m'+"please enter enough money"+'\033[0m')
-        print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Strawberry:
-       print('\033[94m'+"Here is your item...")
-       print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Coffee:
+    elif choice== Coffee:
       print('\033[94m'+" ~ Great! You have chosen Coffee ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Coffee= 3
-      if y > Coffee:
-          print("Here is your change : ",y -Coffee)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Coffee:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Coffee:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Mango:
+    elif choice== Mango:
       print('\033[94m'+" ~ Great! You have chosen Mango ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Mango = 3
-      if y > Mango:
-          print("Here is your change :  ",y - Mango)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Mango:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Mango:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Avocado:
+    elif choice== Avocado:
       print('\033[94m'+" ~ Great! You have chosen Avocado ~ ")
       print("Please Pay 3 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Avocado = 3
-      if y > Avocado:
-          print("Here is your change : ",y - Avocado)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Avocado:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Avocado:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m') 
 
-
-
-#OTHERS
-
-if choice== Other:
-  print ('\033[94m'+" ~ You have selected Other ~ "+'\033[0m')
-  print(" {{ Here are the list of some Emergency Items }}")
-  
-  Instant_Ramen= 126
-  print('\033[92m'+"126 - Instant_Ramen               - 4AED")
-  Sanitary_Napkin= 127
-  print("127 - Sanitary_Napkin             - 1AED")
-  Plastic_Bag=128
-  print("128 - Plastic_Bag                 - 2AED")
-  Umbrella= 129
-  print("129 - Umbrella                    - 6AED")
-  Mask=  130
-  print("130 - Mask                        - 1AED")
-  choice=int(input("  Type a product code to continue... "))
-
-
-if choice== Instant_Ramen:
-  print('\033[94m'+" ~ Great! You have chosen Instant_Ramen ~ ")
-  print("Please Pay 4 AED"+'\033[0m')
-  y=float(input("Insert the money.."))
-  Instant_Ramen = 4
-  if y > Instant_Ramen:
-      print("Here is your change: ",y - Instant_Ramen)
-      print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-  elif y< Instant_Ramen:
-       print('\033[91m'+"please enter enough money"+'\033[0m')
-       print('\033[91m'+"Your money is refunded "+'\033[0m')
-      
-  elif y==Instant_Ramen:
-      print('\033[94m'+"Here is your item...")
-      print("Thankyou for the purchase, have a good day!"+'\033[0m')
- 
-if choice== Sanitary_Napkin:
-      print('\033[94m'+" ~ Great! You have chosen Sanitary_Napkin ~ ")
-      print("Please Pay 1 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Sanitary_Napkin = 1
-      if y > Sanitary_Napkin:
-          print("Here is your change :  ",y - Sanitary_Napkin)
-          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Sanitary_Napkin:
-           print('\033[91m'+"please enter enough money"+'\033[0m')
-           print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Sanitary_Napkin:
+  if choice==Vanilla:
+      money_Vanilla=float(input("Please insert the money"))
+      Vanilla_price=2
+      Vanilla_change=money_Vanilla-Vanilla_price
+      while True:
+        if money_Vanilla==Vanilla_price:
           print('\033[94m'+"Here is your item...")
           print("Thankyou for the purchase, have a good day!"+'\033[0m')
-
-if choice== Plastic_Bag:
-      print('\033[94m'+" ~ Great! You have chosen Plastic_Bag~ ")
-      print("Please Pay 2 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Plastic_Bag = 2
-      if y > Plastic_Bag:
-          print("Here is your change :  ",y - Plastic_Bag)
+          break
+        elif money_Vanilla>Vanilla_price:
+          print("Here is your change : ")
+          print(Vanilla_change)
           print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Plastic_Bag:
-        print('\033[91m'+"please enter enough money"+'\033[0m')
-        print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Plastic_Bag:
-       print('\033[94m'+"Here is your item...")
-       print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Vanilla=float(input("please insert money again"))
+          if moneyagain_Vanilla + money_Vanilla==Vanilla_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-if choice== Umbrella:
-      print('\033[94m'+" ~ Great! You have chosen Umbrella ~ ")
-      print("Please Pay 6 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Umbrella= 6
-      if y > Umbrella:
-          print("Here is your change : ",y -Umbrella)
+  if choice==Chocolate:
+      money_Chocolate=float(input("Please insert the money"))
+      Chocolate_price=2
+      Chocolate_change=money_Chocolate-Chocolate_price
+      while True:
+        if money_Chocolate==Chocolate_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Chocolate>Chocolate_price:
+          print("Here is your change : ")
+          print(Chocolate_change)
           print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Umbrella:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Umbrella:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Chocolate=float(input("please insert money again"))
+          if moneyagain_Chocolate + money_Chocolate==Chocolate_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
 
-if choice== Mask:
-      print('\033[94m'+" ~ Great! You have chosen Mask ~ ")
-      print("Please Pay 1 AED"+'\033[0m')
-      y=float(input("Please insert the money.."))
-      Mask= 1
-      if y > Mask:
-          print("Here is your change :  ",y - Mask)
+  if choice==Strawberry:
+      money_Strawberry=float(input("Please insert the money"))
+      Strawberry_price=3
+      Strawberry_change=money_Strawberry-Strawberry_price
+      while True:
+        if money_Strawberry==Strawberry_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Strawberry>Strawberry_price:
+          print("Here is your change : ")
+          print(Strawberry_change)
           print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
-      elif y< Mask:
-         print('\033[91m'+"please enter enough money"+'\033[0m')
-         print('\033[91m'+"Your money is refunded "+'\033[0m')
-      elif y==Mask:
-        print('\033[94m'+"Here is your item...")
-        print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Strawberry=float(input("please insert money again"))
+          if moneyagain_Strawberry + money_Strawberry==Strawberry_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
+
+  if choice==Coffee:
+      money_Coffee=float(input("Please insert the money"))
+      Coffee_price=3
+      Coffee_change=money_Coffee-Coffee_price
+      while True:
+        if money_Coffee==Coffee_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Coffee>Coffee_price:
+          print("Here is your change : ")
+          print(Coffee_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Coffee=float(input("please insert money again"))
+          if moneyagain_Coffee + money_Coffee==Coffee_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
+
+  if choice==Mango:
+      money_Mango=float(input("Please insert the money"))
+      Mango_price=3
+      Mango_change=money_Mango-Mango_price
+      while True:
+        if money_Mango==Mango_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Mango>Mango_price:
+          print("Here is your change : ")
+          print(Mango_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Mango=float(input("please insert money again"))
+          if moneyagain_Mango + money_Mango==Mango_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
+
+  if choice==Avocado:
+      money_Avocado=float(input("Please insert the money"))
+      Avocado_price=3
+      Avocado_change=money_Avocado-Avocado_price
+      while True:
+        if money_Avocado==Avocado_price:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        elif money_Avocado>Avocado_price:
+          print("Here is your change : ")
+          print(Avocado_change)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+          break
+        else:
+          print('\033[91m'+"please enter enough money"+'\033[0m')
+          moneyagain_Avocado=float(input("please insert money again"))
+          if moneyagain_Avocado + money_Avocado==Avocado_price:
+            print('\033[94m'+"Here is your item...")
+            print("Thankyou for the purchase, have a good day!"+'\033[0m')
+            break
+          break
+
+  
+
+  
+
+  order=str(input("Do you want to order again? (1-yes/0-no) : "))
+  if order=="0":
+    break
+  else:
+   continue

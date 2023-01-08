@@ -256,6 +256,21 @@ if choice== Chips:
   print("119 - Pofak               - 1AED"+'\033[0m')
   choice=int(input("  Type a product code to continue... "))
 
+if choice== Doritos:
+      print('\033[94m'+" ~ Great! You have chosen Doritos ~ ")
+      print("Please Pay 3 AED"+'\033[0m')
+      y=float(input("Please insert the money.."))
+      Doritos = 3
+      if y > Doritos:
+          print("Here is your change :  ",y - Doritos)
+          print('\033[94m'+"Thankyou for the purchase, have a good day!"+'\033[0m')
+      elif y < Doritos:
+           print('\033[91m'+"please enter enough money"+'\033[0m')
+           print('\033[91m'+"Your money is refunded "+'\033[0m')
+      elif y== Doritos:
+          print('\033[94m'+"Here is your item...")
+          print("Thankyou for the purchase, have a good day!"+'\033[0m')
+
 if choice== Cheetos:
       print('\033[94m'+" ~ Great! You have chosen Cheetos ~ ")
       print("Please Pay 2 AED"+'\033[0m')
